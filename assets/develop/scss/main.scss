@@ -1,0 +1,21 @@
+/*Components*/
+@import 'components/variables';
+@import 'components/mixins';
+@import 'components/reset';
+@import 'components/fonts';
+@import 'components/tools';
+
+/*Libs*/
+@import 'libs/font-awesome';
+@import 'libs/animate';
+@import 'libs/owl.carousel';
+
+/*Layout*/
+@import 'layout/header';
+@import 'layout/about';
+@import 'layout/services';
+@import 'layout/goals';
+@import 'layout/reviews';
+@import 'layout/contacts';
+@import 'layout/footer';
+@import 'layout/popup';

@@ -1,0 +1,89 @@
+.reviews{
+  background: #f9f9f9;
+}
+.slider{
+  &__item{
+    margin: 10px;
+    padding: 40px;
+    box-shadow: 0 5px 20px rgba(112,134,230,.2);
+  }
+  &__icon{
+    position: relative;
+    border-radius: 5px;
+    height: 75px;
+    top: 12px;
+    width: 75px;
+    transform: rotate(50deg);
+    background: linear-gradient(135deg,#55ae16 45%,#fff);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    i{
+      position: relative;
+      top: 19px;
+      left: 19px;
+      color: $white;
+      font-size: 36px;
+      transform: rotate(310deg);
+    }
+  }
+  &__descr{
+    text-align: center;
+    display: block;
+    font-size: 20px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+
+  }
+  &__name{
+    text-align: center;
+    display: block;
+    font-weight: 500;
+    font-size: 24px;
+  }
+  &__position{
+    text-align: center;
+    display: block;
+    font-weight: 400;
+    font-size: 20px;
+  }
+
+  .owl-dot{
+    position: relative;
+    display: inline-block;
+    margin: 0 3px;
+    padding: 0;
+    cursor: pointer;
+    &.active{
+      span{
+        background-color: $green;
+      }
+    }
+  }
+  .owl-dots{
+    position: absolute;
+    margin-top: 33px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    @include lg-max{
+      margin-top: 22px;
+    }
+    span{
+      display: inline-block;
+      border-radius: 4px;
+      width: 15px;
+      height: 15px;
+      margin-left: 12px;
+      margin-right: 12px;
+      cursor: pointer;
+      background-color: #000000;
+      outline: none;
+      @include lg-max{
+        margin-left: 8px;
+        margin-right: 8px;
+      }
+    }
+  }
+}
+
