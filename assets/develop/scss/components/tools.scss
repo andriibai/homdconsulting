@@ -45,7 +45,7 @@ span{
 .btn {
   font-size: 14px;
   padding: 15px 30px;
-  border-radius: 0;
+  border-radius: 15px;
   letter-spacing: 1px;
   font-weight: 500;
   color: #fff;
@@ -59,11 +59,12 @@ span{
   text-align: center;
   color: #404040;
   padding-bottom: 40px;
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-weight: bold;
-  font-size: 36px;
+  font-size: 40px;
   letter-spacing: 2px;
   @include respond(767){
     font-size: 30px;
   }
 }
+

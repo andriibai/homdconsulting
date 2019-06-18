@@ -1,31 +1,40 @@
 .contacts{
   height: auto;
-  padding: 90px 0;
-  background: linear-gradient(to bottom,#5aa428 60%,#ffffff);
+  padding: 110px 0 90px 0;
+  background-image: linear-gradient(90deg,#1651b0,#0097f6cc);
   position: relative;
+  &__shape{
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .title{
+    color: #fff;
+  }
   @include respond(767){
     padding: 70px 0;
   }
   &:before{
     content: '';
-    background: url(../img/map.jpg)no-repeat;
+    background: url(../img/map.png)no-repeat;
     background-position: center;
     background-size: cover;
-    opacity: 0.1;
     position: absolute;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-  }
-  .title{
-    position: relative;
-    color: #fff;
+    z-index: -1;
   }
 
   &__content{
     @include flex();
     align-items: center;
+    padding: 40px;
+    position: relative;
+    background: #0000003b;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
     @include respond(767){
      flex-direction: column;
     }
@@ -33,9 +42,23 @@
 }
 
 .content-left{
+  &__title{
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+}
+.content-right{
   position: relative;
   @include respond(767){
     margin-bottom: 20px;
+  }
+  &__title{
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #fff;
   }
   &__info{
     display: flex;
@@ -85,13 +108,11 @@
       padding: 11px 20px;
     }
   }
-  &__btn-footer{
-    margin-top: 20px;
-    background: #000;
+  &__btn{
+    background-color: #fff;
+    border: 1px solid #fff;
+    color: #000;
     box-shadow: 0 8px 9px 0 rgba(96,94,94,.17);
-    &:hover{
-      transform: translateY(-3px);
-    }
   }
 }
 
@@ -101,7 +122,6 @@
   transform: scale(0.95);
 }
 
-.popup{
-  display: none;
-  &__text{}
+
+.map{
 }

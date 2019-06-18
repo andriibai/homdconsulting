@@ -1,4 +1,5 @@
 <section id="goals" class="goals">
+    <img class="goals__shape" src="assets/prod/img/bgshape2.png" alt="">
     <div class="wrapper">
         <h2 class="title">Goals</h2>
         <div class="goals__content">

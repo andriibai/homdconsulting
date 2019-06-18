@@ -1,0 +1,52 @@
+.team{
+  padding: 85px 0 120px;
+  &__content{
+    @include flex();
+    align-items: center;
+  }
+  &__img{
+    height: 100%;
+    width: 50%;
+    border-bottom: 5px solid #1e6ec7;
+    border-radius: 15px;
+    position: relative;
+    top: 40px;
+  }
+  &__info{
+    width: 50%;
+    padding: 40px 42px;
+    background: #fff;
+    border-top: 5px solid #1e6ec7;
+    border-radius: 15px;
+    box-shadow: 0px 8px 54px 0 rgba(32, 32, 32, 0.11);
+  }
+  &__title{
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  &__text{
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 20px;
+  }
+  &__rectangle-right{
+    position: absolute;
+    width: 60%;
+    height: 150px;
+    background: url(../img/worn-dots.png);
+    background-size: auto;
+    z-index: -1;
+    right: 0;
+    bottom: 16%;
+  }
+  &__rectangle-left{
+    position: absolute;
+    width: 60%;
+    height: 246px;
+    background: url(../img/worn-dots.png);
+    background-size: auto;
+    z-index: -1;
+    left: 0;
+    bottom: 40%;
+  }
+}

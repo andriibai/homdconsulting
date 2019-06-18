@@ -37,10 +37,10 @@
                     <a href="#services" class="menu__link">Services</a>
                 </li>
                 <li class="menu__item">
-                    <a href="#mission" class="menu__link">Goals</a>
+                    <a href="#goals" class="menu__link">Goals</a>
                 </li>
                 <li class="menu__item">
-                    <a href="#reviews" class="menu__link">Reviews</a>
+                    <a href="#team" class="menu__link">Our team</a>
                 </li>
                 <li class="menu__item">
                     <a href="#contacts" class="menu__link">Contacts</a>
