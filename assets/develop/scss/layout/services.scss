@@ -3,6 +3,9 @@
   &__content{
     @include flex();
     align-items: center;
+    @include lg-max{
+      flex-direction: column;
+    }
   }
   &__list{
     display: flex;
@@ -24,10 +27,9 @@
     }
     @include xl-max{
       max-width: 400px;
+      padding: 30px;
     }
-    @include lg-max{
-      max-width: 320px;
-    }
+
   }
 
   &__icon{
@@ -82,6 +84,9 @@
     line-height: 1.5;
     font-size: 16px;
     color: #7e7e7e;
+  }
+  &__img{
+    width: 90%;
   }
 }
 

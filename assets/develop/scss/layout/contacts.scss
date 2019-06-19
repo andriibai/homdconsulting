@@ -29,54 +29,75 @@
 
   &__content{
     @include flex();
-    align-items: center;
-    padding: 40px;
     position: relative;
     background: #0000003b;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-    @include respond(767){
+    height: 360px;
+    @include lg-max{
      flex-direction: column;
+      height: auto;
     }
   }
 }
 
 .content-left{
+  padding: 40px;
+  margin: 0 auto;
+  @include sm-max{
+    padding: 30px 15px 30px 15px;
+    margin:0;
+  }
   &__title{
     text-align: center;
     font-size: 24px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     color: #fff;
+    letter-spacing: 3px;
   }
 }
 .content-right{
+  padding: 40px;
   position: relative;
-  @include respond(767){
-    margin-bottom: 20px;
+  background: #fff;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 15px;
+  height: 360px;
+  @include lg-max{
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    height: auto;
+  }
+  @include sm-max{
+    padding: 30px 15px 30px 15px;
   }
   &__title{
     text-align: center;
     font-size: 24px;
     margin-bottom: 20px;
-    color: #fff;
+    color: #7e7e7e;
+    letter-spacing: 3px;
   }
   &__info{
     display: flex;
     align-items: center;
     margin-bottom: 20px;
+    @include sm-max{
+      flex-direction: column;
+    }
     i{
-      color: $white;
+      color: #1856b4;
       font-size: 40px;
       margin-right: 20px;
-      @include xs-max{
+      @include xl-max{
         font-size: 35px;
       }
     }
     span{
-      color: $white;
+      color: #7e7e7e;
       font-size: 24px;
       font-weight: 400;
-      @include xs-max{
+      @include xl-max{
         font-size: 20px;
       }
     }
@@ -93,26 +114,22 @@
     height: 50px;
     font-size: 15px;
     padding: 21px 28px;
-    margin-bottom: 20px;
-    border-radius: 4px;
+    margin-bottom: 24px;
+    border-radius: 15px;
     transition: all 0.25s;
-    box-shadow: 0px 3px 3px 0px rgba(0,0,0,.30);
     &:hover{
       transition: all 0.25s;
     }
-    @include lg-max{
-      width: 290px;
+    @include xl-max{
+      width: 346px;
     }
-    @include respond(465){
-      height: 43px;
-      padding: 11px 20px;
+    @include sm-max{
+      width: 100%;
     }
   }
   &__btn{
-    background-color: #fff;
-    border: 1px solid #fff;
-    color: #000;
-    box-shadow: 0 8px 9px 0 rgba(96,94,94,.17);
+    @extend .about__btn-contact;
+    letter-spacing: 5px;
   }
 }
 

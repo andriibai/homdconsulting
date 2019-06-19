@@ -3,7 +3,7 @@
   .wrapper {
     @include flex();
     align-items: center;
-    padding: 140px 0 112px 0;
+    padding: 180px 0 112px 0;
     @include lg-max{
       padding-top: 115px;
     }
@@ -15,7 +15,9 @@
     background-image: linear-gradient(140deg, #1651b0, #0097f6cc);
   }
   &__text{
-    @include xs-max{
+    width: 40%;
+    @include respond(767){
+      width: 90%;
       text-align: center;
     }
   }
@@ -51,9 +53,10 @@
     }
   }
   &__img{
+    width: 60%;
     @include respond(767){
-      margin-top: 20px;
-      width: 400px;
+      margin-top: 25px;
+      width: 90%;
     }
   }
 

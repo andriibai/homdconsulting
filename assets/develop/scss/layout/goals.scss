@@ -35,33 +35,30 @@
     flex-wrap: wrap;
     position: relative;
     z-index: 2;
-    @include lg-max{
+    @include xl-max{
       justify-content: center;
     }
   }
   &__box{
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     //background: #fff;
     max-width: 500px;
     text-align: center;
     padding: 30px;
-    margin-top: 20px;
     border: 1px solid #fff;
     border-radius: 15px;
-    //box-shadow: 0 8px 9px 0 rgba(96,94,94,.17);
-    @include xl-max{
-      //max-width: 300px;
-    }
-    @include lg-max{
-      margin: 10px;
-    }
+    margin-top: 30px;
+    margin-bottom: 67px;
+    box-shadow: 1px 1px 20px 10px rgba(255, 255, 255, 0.22);
+    transition: all ease .7s;
     &:hover{
       //background: #fff;
       transition: all ease .7s;
-
-    }
+      box-shadow: 1px 1px 20px 10px rgba(255, 255, 255, 0.5);
+  }
   }
   &__icon{
     width: 70px;
@@ -74,6 +71,7 @@
     display: inline-block;
     position: relative;
     transition: all .4s;
+    margin-top: -67px;
     &:after{
       content: "";
       width: 100%;
@@ -91,13 +89,13 @@
   &__text{
     display: flex;
     flex-direction: column;
-    width: 75%;
   }
   &__title{
     font-size: 24px;
     color: #fff;
     font-weight: 500;
     display: block;
+    margin-top: 20px;
     margin-bottom: 20px;
   }
   &__descr{
