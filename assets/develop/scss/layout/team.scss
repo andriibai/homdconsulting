@@ -14,6 +14,7 @@
     border-radius: 15px;
     position: relative;
     top: 40px;
+    box-shadow: 0 8px 54px 0 rgba(32,32,32,.11);
     @include lg-max{
       width: 90%;
       top: 0;

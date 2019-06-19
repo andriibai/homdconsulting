@@ -17,8 +17,7 @@ var paths = {
     css: 'assets/prod/css',
     jsAll: [
         'assets/develop/js/jquery.min.js',
-        'assets/develop/js/owl.carousel.min.js',
-        'assets/develop/js/wow.min.js',
+        'assets/develop/js/contact-form.js',
         'assets/develop/js/main.js'
     ],
     js: 'assets/prod/js',
