@@ -1,2 +1,2 @@
 # homdconsulting
-homdconsulting.com
+https://homdconsulting.com/
